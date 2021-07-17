@@ -1,0 +1,354 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;   
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.e-nav{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+}
+.e-nav a{
+    padding: 2px 0;
+}
+
+.main-logo{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 20%;
+    z-index: 10;
+}
+
+.container{
+     position: relative;
+}
+
+header{
+    padding-bottom: 10px; 
+}
+
+header .top {
+    padding: 20px 0;
+}
+
+header .top a {
+    padding: 0 5px;
+}
+
+header .search{
+    text-decoration: none;
+}
+header .search .text{
+    color:#e1434e;
+    padding-left: 5px;
+}
+
+header .cart {
+    text-decoration: none;
+}
+header .cart p {
+    color:#e1434e;
+    padding-left: 5px;
+}
+
+header .bottom p a{
+    padding:0 10px;
+    font-weight: 500;
+    color:#000;
+}
+
+@media (min-width: 992px) { 
+header .bottom p a:hover{
+    color:#e1434e;
+    text-decoration: none;
+}
+}
+
+
+.banner{
+    margin-bottom: 20px;
+}
+
+.menu-popular,
+.menu-kind {
+    padding: 0 15px;
+    margin-bottom: 80px;
+}
+
+.menu-kind .title{
+    margin-bottom: 20px;
+}
+
+.menu-popular .title,
+.menu-kind .title{
+    display:flex;
+    width: 100%;
+    border-bottom: 1px solid #dbd0b9;
+    margin-bottom: 20px;
+}
+.menu-popular .title .text,
+.menu-kind .title .text{
+    position: relative;
+    margin: auto;
+}
+
+.menu-popular .title .text::after,
+.menu-kind .title .text::after{
+    content:'';
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: -65px;
+    min-width: 64px;
+    min-height: 28px;
+    background: url(./images/bg-title-01.png);
+    background-size: cover;
+}
+.menu-popular .title .text::before,
+.menu-kind .title .text::before{
+    content:'';
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: 65px;
+    min-width: 64px;
+    min-height: 28px;
+    background: url(./images/bg-title-02.png);
+    background-size: cover;
+}
+
+@media (min-width: 992px) { 
+.menu-popular .title .text,
+.menu-kind .title .text{
+   font-size: 25px;
+}
+
+.menu-popular .title .text::after,
+.menu-kind .title .text::after{
+    content:'';
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: -100px;
+    min-width: 96px;
+    min-height: 42px;
+    background: url(./images/bg-title-01.png);
+    background-size: cover;
+}
+.menu-popular .title .text::before,
+.menu-kind .title .text::before{
+    content:'';
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: 100px;
+    min-width: 96px;
+    min-height: 42px;
+    background: url(./images/bg-title-02.png);
+    background-size: cover;
+}
+ }
+
+.menu-popular .item{
+    margin-bottom: 80px;
+}
+
+.menu-popular .item a p {
+    color: #e1434e;
+}
+.menu-popular .item a:hover {
+    text-decoration:none;
+}
+
+.menu-popular .item p a{
+    color: #000;
+}
+.menu-popular .item p a:hover{
+    color: #e1434e;
+}
+
+.menu-popular .item .carousel-item{
+    position: relative;
+}
+
+.menu-kind {
+    margin-bottom: 80px;
+}
+
+.menu-kind .item .text {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.menu-kind .item .text h4{
+    margin-bottom: 0;
+    color: #beaa5e;
+}
+.menu-kind .item .text p{
+    color: #fff;
+}
+
+@media (min-width: 992px) { 
+    .item-list ul li{
+        padding: 5px 15px;
+        color:#595757;
+        position: relative;
+    }
+    .item-list ul li a{
+        color:#595757;
+    }
+    .item-list ul li a:hover{
+        color:#e1434e;
+        text-decoration: none;
+    }
+    .item-list ul li::after{
+        content:'';
+        display:block;
+        position: absolute;
+        right: -5px;
+        top: 45%;
+        width: 3px;
+        height: 3px;
+        background-color: #595757;
+        border-radius: 50%;
+    }
+
+    /* 縮小輪播圖，讓畫面好看一些 */
+    .item-list-carousel{
+        margin: auto;
+        width: 30%;
+    }
+    /* 輪播圖因為圖片比例縮小了，箭頭看不見，添加黑背景讓箭頭顯現 */
+    .carousel-control-prev,
+    .carousel-control-next
+    {
+        background-color: #000;
+    }
+}
+
+footer{
+    padding: 20px 15px;
+    background-color: #ddd4be;
+}
+
+.autor,.cs,.sn{
+    position: relative;
+    padding:10px 0;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.autor a,.cs a,.sn a{
+    color:#000;
+    text-decoration: none;
+    font-weight: 500;
+}
+.autor::after,.cs::after,.sn::after{
+    content:'';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 46px;
+    height: 24px;
+    background: url(./images/toggle-white.png);
+}
+
+footer .nav{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.info .disclaimer p{
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+footer .info {
+    align-items: center;
+ }
+
+@media (min-width: 992px) {
+    footer .nav{
+        order: 2;
+        width: 40%;
+        /* 重要 先轉為flex和row
+        bs裡面有內建flex-wrap:wrap;
+        所以要改為nowrap */
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap:nowrap;
+        margin-bottom: 0;
+    }
+
+    .autor,.cs,.sn{
+    /* 改成auto，不然上面有w100%，整個排版全毀 */
+    width: auto;
+    padding:10px 0;
+    border-bottom:0;
+}
+    .cs,.sn{
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+    margin-right: 30px;
+}
+/* .autor a,.cs a,.sn a{
+    color:#000;
+    text-decoration: none;
+    font-weight: 500;
+} */
+.autor::after,.cs::after,.sn::after{
+    width: 0;
+    height: 0;
+}
+
+.com-show{
+    flex-direction: column;
+}
+.com-show p,
+.com-show a
+{
+    color:#000;
+    padding: 5px 0;
+}
+
+.com-show p{
+    font-weight: 700;
+}
+
+.com-show a:hover{
+    color:#e1434e;
+    text-decoration: none;
+}
+
+footer .info {
+    align-items: flex-start;
+ }
+
+.info .disclaimer p{
+    text-align: start;
+}
+
+}
