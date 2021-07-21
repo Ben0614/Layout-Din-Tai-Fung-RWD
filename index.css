@@ -73,6 +73,48 @@ header .bottom p a{
     color:#000;
 }
 
+.hum{
+    position: relative;
+}
+.hum:hover .hum-list{
+    display:block;
+}
+
+.hum-list{
+    display:none;
+    position:absolute;
+    left: -80px;
+    background-color: #fff;
+    z-index:10;
+    width: 253px;
+}
+
+.hum-list li{
+    position: relative;
+    margin: 2px 0;
+    padding: 5px;
+    background-color: #ddd4be;
+}
+.hum-list li::before{
+    content:'';
+    position:absolute;
+    width: 5px;
+    height: 5px;
+    margin-left:5px;
+    top: 40%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.hum-list li a{
+    padding-left: 20px;
+    color:#000;
+}
+
+/* 輪播圖的圈圈 */
+.carousel-indicators{
+    z-index:-1;
+}
+
 @media (min-width: 992px) { 
 header .bottom p a:hover{
     color:#e1434e;
