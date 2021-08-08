@@ -76,9 +76,6 @@ header .bottom p a{
 .hum{
     position: relative;
 }
-.hum:hover .hum-list{
-    display:block;
-}
 
 .hum-list{
     display:none;
