@@ -230,7 +230,8 @@ header .bottom p a:hover{
     margin-bottom: 80px;
 }
 
-.menu-kind .item .text {
+.menu-kind .item .text,
+.mobile-item .text {
     position: absolute;
     left:0;
     right:0;
@@ -239,11 +240,17 @@ header .bottom p a:hover{
     background-color: rgba(0,0,0,0.5);
 }
 
-.menu-kind .item .text h4{
+.mobile-item .text {
+    margin: 0 5px;
+}
+
+.menu-kind .item .text h4,
+.mobile-item .text h4{
     margin-bottom: 0;
     color: #beaa5e;
 }
-.menu-kind .item .text p{
+.menu-kind .item .text p,
+.mobile-item .text p{
     color: #fff;
 }
 
@@ -270,18 +277,6 @@ header .bottom p a:hover{
         height: 3px;
         background-color: #595757;
         border-radius: 50%;
-    }
-
-    /* 縮小輪播圖，讓畫面好看一些 */
-    .item-list-carousel{
-        margin: auto;
-        width: 30%;
-    }
-    /* 輪播圖因為圖片比例縮小了，箭頭看不見，添加黑背景讓箭頭顯現 */
-    .carousel-control-prev,
-    .carousel-control-next
-    {
-        background-color: #000;
     }
 }
 
@@ -390,4 +385,19 @@ footer .info {
     text-align: start;
 }
 
+}
+
+.mobile-item{
+    margin:auto;
+    /* width: 800px; */
+}
+
+.slick-prev:before, .slick-next:before{
+    color:#000;
+    font-size: 30px;
+    margin:0 -20px;
+}
+
+.mobile-item .carousel-item{
+    padding: 0 5px;
 }
